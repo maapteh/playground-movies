@@ -1,0 +1,13 @@
+<div class="c-wrapper">
+
+  <h1>{{ title }}</h1>
+
+  <app-loading-indicator [isLoading]="isLoading" *ngIf="isLoading;else bootstrap"></app-loading-indicator>
+
+  <ng-template #bootstrap>
+      <router-outlet></router-outlet>
+  </ng-template>
+
+  <p class="c-copyright">&copy; 2017 MAAS38 v{{version}}</p>
+
+</div>

@@ -1,0 +1,17 @@
+<div class="c-video">
+  <iframe
+    class="c-video__video"
+    width="560"
+    height="315"
+    [src]="url | safeUrl"
+    frameborder="0"
+    gesture="media"
+    allow="encrypted-media"
+    allowfullscreen></iframe>
+</div>
+
+<h1 class="c-video__title o-title--h1">{{movie.title}}</h1>
+
+<p>{{movie.info}}</p>
+
+<p><a routerLink="/movies">Overview</a></p>

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font: 1em Roboto, Arial, sans-serif
+}
+
+p, ul, ol, h1, h2, h3, h4, h5 {
+  margin: 0 0 1em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: 1em;
+}
+
+a {
+  color: #333;
+}
+
+.o-title--h1 {
+  font-size: 1.5em;
+}
+
+.c-wrapper {
+  max-width: 70em;
+  margin: 0 auto;
+  padding: 0 24px;
+}

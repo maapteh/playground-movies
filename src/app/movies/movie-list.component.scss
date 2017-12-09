@@ -1,0 +1,18 @@
+.c-movies-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    padding: 0 4px 24px 0;
+    width: 210px;
+    max-width: 210px;
+
+    @media (max-width: 480px) {
+      width: 50%;
+      max-width: 50%;
+      box-sizing: border-box;
+    }
+
+  }
+}
