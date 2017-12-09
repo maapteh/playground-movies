@@ -37,11 +37,8 @@ export class MoviesService {
   }
 
   getMovie(id: string): Observable<Movie> {
-    console.log(id);
-    console.log(this.movies);
-
-    console.log(this.movies.find(movie => movie.id === id));
-
+    // TODO: if we have movie available (current list)
+    // ELSE: retrieve movie/{id} from API and pass that one (bookmark or google)
     return of(this.movies.find(movie => movie.id === id));
   }
 
