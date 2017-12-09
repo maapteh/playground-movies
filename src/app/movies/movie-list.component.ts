@@ -14,12 +14,13 @@ export class MovieListComponent implements OnInit {
 
   public isLoading:boolean = true;
 
-  constructor(private moviesService: MoviesService) { }
+  constructor(
+    private moviesService: MoviesService
+  ) { }
 
   ngOnInit() {
     console.log('list component');
     this.movies = this.moviesService.getMovies();
-
   }
 
 }

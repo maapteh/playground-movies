@@ -5,13 +5,17 @@
   &__item {
     display: flex;
     padding: 0 4px 24px 0;
-    width: 210px;
-    max-width: 210px;
+    width: 20%;
+    max-width: 20%;
+    box-sizing: border-box;
 
+    @media (max-width: 768px) {
+      width: 33.333%;
+      max-width: 33.333%;
+    }
     @media (max-width: 480px) {
       width: 50%;
       max-width: 50%;
-      box-sizing: border-box;
     }
 
   }

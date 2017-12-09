@@ -17,6 +17,11 @@ a {
   color: #333;
 }
 
+.c-title {
+  font-size: 1em;
+  margin-top: 6px;
+}
+
 .o-title--h1 {
   font-size: 1.5em;
 }
@@ -25,4 +30,9 @@ a {
   max-width: 70em;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.c-copyright {
+  font-size: 0.75em;
+  color: #ccc;
 }
