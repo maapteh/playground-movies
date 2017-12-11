@@ -1,7 +1,16 @@
 <div class="c-movies-list">
-  <ng-container *ngFor="let movie of movies">
+  <ng-container *ngFor="let movie of movies | matchCategory: selectedCategory">
 
     <app-movie-card [movie]="movie" class="c-movies-list__item"></app-movie-card>
 
   </ng-container>
 </div>
+
+<h3>Category test</h3>
+
+<p>
+  <a routerLink="/movies">all</a>
+  <a routerLink="/movies" [queryParams]="{category: 1}">1</a>
+  <a routerLink="/movies" [queryParams]="{category: 2}">2</a>
+  <a routerLink="/movies" [queryParams]="{category: 3}">3</a>
+</p>

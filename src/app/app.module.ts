@@ -19,6 +19,7 @@ import { LoadingIndicatorComponent } from './loading-indicator/loading-indicator
 import { MovieListComponent } from './movies/movie-list.component';
 import { MovieCardComponent } from './movies/movie-card/movie-card.component';
 import { MovieViewComponent } from './movies/movie-view/movie-view.component';
+import { MatchCategoryPipe } from './pipes/match-category.pipe';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MovieViewComponent } from './movies/movie-view/movie-view.component';
     MovieListComponent,
     MovieViewComponent,
     SafeUrlPipe,
-    LoadingIndicatorComponent
+    LoadingIndicatorComponent,
+    MatchCategoryPipe
   ],
   imports: [
     BrowserModule,

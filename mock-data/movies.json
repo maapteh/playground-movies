@@ -2,6 +2,7 @@
   "movies": [
     {
       "id": "m96VzAzvb8Q",
+      "category": 1,
       "title": "Jah Khalib - Лейла | Official video",
       "length": "4:21",
       "date": "2017-12-12",
@@ -10,24 +11,28 @@
     {
       "id": "3XZVKR75Xg4",
       "title": "Alexandra Vorobeva \"Chandelier\" - Blind plays - Voice - Season 3",
+      "category": 3,
       "length": "4:53",
       "date": "2017-12-14"
     },
     {
       "id": "c19t5ORk8Xo",
       "title": "'Baaton Ko Teri' FULL VIDEO Song | Arijit Singh | Abhishek Bachchan, Asin | T-Series",
+      "category": 2,
       "length": "4:06",
       "date": "2017-12-14"
     },
     {
       "id": "_QguoUKqFVo",
       "title": "Maître Gims - Je te pardonne (Clip officiel) ft. Sia",
+      "category": 1,
       "length": "4:50",
       "date": "2017-12-14"
     },
     {
       "id": "AQ9zeDd0mpg",
       "title": "Zaz, la toy session : je veux",
+      "category": 2,
       "length": "4:00",
       "date": "2017-12-14"
     }
