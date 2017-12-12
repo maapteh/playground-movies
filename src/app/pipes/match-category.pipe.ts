@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class MatchCategoryPipe implements PipeTransform {
 
-  transform(items: Array<any>, category: string): Array<any> {
+  transform(items: Array<any>, category: number): Array<any> {
 
     if (!category) {
       return items;

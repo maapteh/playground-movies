@@ -27,7 +27,6 @@ export class MovieListComponent implements OnInit {
     this.movies = this.moviesService.getMovies();
 
     this.route.queryParams.subscribe(params => {
-      console.log(params);
       this.selectedCategory = parseInt(params.category, 10);
     })
 

@@ -20,7 +20,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
+Run `ng test --code-coverage` to also see the coverage report
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).

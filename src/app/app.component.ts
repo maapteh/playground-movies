@@ -10,10 +10,11 @@ import { MoviesService } from './services/movies/movies.service';
 export class AppComponent implements OnInit {
 
   // when we have our movies we will proceed with our router outlet
-  public isLoading:boolean = true;
+  isLoading:boolean = true;
 
   // main application showing logo and header/footer
-  public title = 'Cinema';
+  title = 'Cinema';
+
   public version = environment.version;
 
   constructor(
@@ -24,9 +25,11 @@ export class AppComponent implements OnInit {
     console.log('app component');
     // retrieve our movies
     this.moviesService.load()
-    .then(movies => {
+    .subscribe(movies => {
+      console.log(movies);
       this.isLoading = false;
     });
+
   }
 
 }

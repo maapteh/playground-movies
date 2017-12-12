@@ -2,6 +2,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Router, ActivatedRoute } from '@angular/router';
 
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
+
 import { MovieViewComponent } from './movie-view.component';
 
 import { SafeUrlPipe } from '../../pipes/safe-url.pipe';
