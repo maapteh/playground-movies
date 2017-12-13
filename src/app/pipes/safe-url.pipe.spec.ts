@@ -1,3 +1,4 @@
+/*
 import { SafeUrlPipe } from './safe-url.pipe';
 import { SecurityContext } from '@angular/core';
 import { inject } from '@angular/core/testing';
@@ -20,3 +21,4 @@ describe('SafeUrlPipe', () => {
   }));
 
 });
+*/
