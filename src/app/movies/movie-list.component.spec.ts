@@ -1,11 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { MovieListComponent } from './movie-list.component';
-
-import { MatchCategoryPipe } from '../pipes/match-category.pipe';
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of'
 
 import { Movie } from '../services/movies/movie';
+import { MovieCardComponent } from './movie-card/movie-card.component';
+import { MovieListComponent } from './movie-list.component';
+
+import { MoviesService } from '../services/movies/movies.service';;
+
+import { MatchCategoryPipe } from '../pipes/match-category.pipe';
 
 const MOVIES_OBJECT: Movie[] = [{
   id: '123',
@@ -15,6 +20,12 @@ const MOVIES_OBJECT: Movie[] = [{
   title: '456'
 }];
 
+class MockService {
+  public getMovies(): Movie[] {
+    return MOVIES_OBJECT;
+  }
+}
+
 describe('MovieListComponent', () => {
   let component: MovieListComponent;
   let fixture: ComponentFixture<MovieListComponent>;
@@ -22,8 +33,15 @@ describe('MovieListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
+        MovieCardComponent,
         MovieListComponent,
         MatchCategoryPipe,
+      ],
+      providers: [
+        {
+          provide: MoviesService,
+          useClass: MockService
+        }
       ],
       imports: [
         RouterTestingModule,

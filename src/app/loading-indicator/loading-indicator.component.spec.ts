@@ -25,5 +25,10 @@ describe('LoadingIndicatorComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+
+    const compiled = fixture.debugElement.nativeElement;
+
+    expect(compiled.querySelectorAll('.c-spinner')).not.toBe(null);
+
   });
 });

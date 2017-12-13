@@ -12,8 +12,8 @@ import { Movie } from '../../services/movies/movie';
 })
 export class MovieViewComponent implements OnInit {
 
-  id: string;
   url: string;
+
   movie: Movie;
 
   constructor(
@@ -23,11 +23,15 @@ export class MovieViewComponent implements OnInit {
 
   ngOnInit() {
     // retrieve movie id from route
-    this.id = this.route.snapshot.params.id;
-    this.url = `https://www.youtube.com/embed/${this.id}?rel=0`;
+    const id = this.route.snapshot.params.id;
 
-    this.moviesService.getMovie(this.id)
-    .subscribe(movie => this.movie = movie);
+    this.moviesService.getMovie(id)
+      .subscribe(movie => {
+        this.movie = movie;
+        // TODO: video can come from more sources in future
+        this.url = `https://www.youtube.com/embed/${movie.id}?rel=0`;
+      });
+
   }
 
 }

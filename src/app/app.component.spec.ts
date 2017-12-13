@@ -28,7 +28,6 @@ describe('AppComponent', () => {
         AppComponent,
       ],
       providers: [
-        MoviesService,
         {provide: MoviesService, useClass: MockService}
       ],
       schemas: [
