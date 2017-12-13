@@ -22,7 +22,7 @@ before_install:
   - sh -e /etc/init.d/xvfb start
 install:
   - yarn install
-  - yarn install -g codecov
+  - yarn global add codecov
 script:
   - npm run test  -- --code-coverage --watch false
   - codecov
