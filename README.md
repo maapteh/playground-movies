@@ -1,5 +1,8 @@
 # NgMovies
 
+[![codecov](https://codecov.io/gh/maapteh/playground-movies/branch/master/graph/badge.svg)](https://codecov.io/gh/maapteh/playground-movies)
+[![Build Status](https://travis-ci.org/maapteh/playground-movies.svg?branch=master)](https://travis-ci.org/maapteh/playground-movies)
+
 ## Development server
 
 1. Run `ng serve` in one tab and `npm run mock-server` in the other.
@@ -19,7 +22,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test -sm=false` to execute the unit tests via [Karma](https://karma-runner.github.io).
 Run `ng test --code-coverage` to also see the coverage report
 ## Running end-to-end tests
 
